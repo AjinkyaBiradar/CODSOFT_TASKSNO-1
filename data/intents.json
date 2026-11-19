@@ -1,0 +1,170 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "greetings",
+        "sup"
+      ],
+      "responses": [
+        "Hello {name}! How can I help you today?",
+        "Hi there {name}! What's on your mind?",
+        "Hey {name}! Great to see you. How can I assist?",
+        "Greetings {name}! How may I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "catch you later",
+        "farewell",
+        "have a good day",
+        "talk to you soon"
+      ],
+      "responses": [
+        "Goodbye {name}! Have a wonderful day!",
+        "See you later {name}! Take care!",
+        "Bye {name}! Feel free to chat anytime you need help.",
+        "Farewell {name}! Have a great time!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "appreciate it",
+        "thank you so much",
+        "many thanks",
+        "thanks for the help"
+      ],
+      "responses": [
+        "You're very welcome, {name}!",
+        "Glad I could help, {name}!",
+        "Anytime, {name}! Let me know if you need anything else.",
+        "It's my pleasure to assist you, {name}!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "what should i call you",
+        "tell me your name",
+        "my name is",
+        "i am",
+        "call me",
+        "what is my name",
+        "do you know my name"
+      ],
+      "responses": [
+        "I am RuleBot, your friendly rule-based chatbot assistant!",
+        "My name is RuleBot! Nice to chat with you, {name}.",
+        "You can call me RuleBot. I am here to help you, {name}!"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "what are your features",
+        "how can you help me",
+        "what are your capabilities",
+        "what do you do",
+        "list your skills"
+      ],
+      "responses": [
+        "I can answer questions, tell jokes, tell you the current date/time, remember your name, and chat with you using pattern-matching rules!",
+        "As a rule-based bot, I can recognize intents using regex & keyword scoring, tell jokes, provide the current time, and remember who you are in this session.",
+        "I'm equipped to handle greetings, small talk, jokes, time queries, provide help, and remember your name across our conversation!"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke",
+        "make me laugh",
+        "say something funny",
+        "do you know any jokes",
+        "tell another joke"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "Why was the JavaScript developer sad? Because they didn't Node how to Express themselves! 😄",
+        "There are only 10 types of people in the world: those who understand binary, and those who don't! 💻",
+        "Why do Python programmers wear glasses? Because they don't C#! 🐍",
+        "A SQL query walks into a bar, walks up to two tables and asks: 'Can I join you?' 📊"
+      ]
+    },
+    {
+      "tag": "time_date",
+      "patterns": [
+        "what time is it",
+        "what is the time",
+        "tell me the time",
+        "current time",
+        "what is today's date",
+        "what is the date",
+        "tell me today's date",
+        "what day is it today"
+      ],
+      "responses": [
+        "The current date and time is {datetime}.",
+        "Right now it is {time} on {date}.",
+        "According to my clock, it is currently {time}."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "i need help",
+        "can you help me",
+        "what should i type",
+        "commands",
+        "instructions"
+      ],
+      "responses": [
+        "Here are things you can try:\n- Introduce yourself ('My name is John')\n- Say hello or goodbye\n- Ask 'What time is it?' or 'What is the date?'\n- Ask 'Tell me a joke'\n- Ask 'What can you do?'\n- Ask 'Who are you?'",
+        "Need assistance? Try saying 'hello', asking 'tell me a joke', 'what time is it', or introducing yourself like 'My name is Sarah'!"
+      ]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "how are you",
+        "how is it going",
+        "how are you doing",
+        "what's up",
+        "how do you feel",
+        "are you a robot"
+      ],
+      "responses": [
+        "I'm doing great, {name}! Thanks for asking. How are you doing today?",
+        "Running smoothly at 100% CPU efficiency! How are things with you, {name}?",
+        "All systems operational! How can I make your day better, {name}?",
+        "I am an AI chatbot, happy and ready to help you, {name}!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm sorry {name}, I didn't quite catch that. Could you rephrase or type 'help' to see what I can do?",
+        "I'm not sure how to answer that yet, {name}. Try asking about the time, asking for a joke, or say 'help'!",
+        "My rule base doesn't match that question yet. Try rephrasing or ask 'what can you do?'."
+      ]
+    }
+  ]
+}
