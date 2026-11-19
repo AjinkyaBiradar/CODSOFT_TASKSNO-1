@@ -273,6 +273,3 @@ Restart or rerun the Streamlit app to test your new intent immediately!
 
 ---
 
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
